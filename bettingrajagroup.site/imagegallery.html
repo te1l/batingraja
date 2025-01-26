@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bettingrajagroup.site/imagegallery.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jan 2025 14:51:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    /* Gallery Styling */
+    body {
+        background-color: #f7f7f7;
+        color: #333;
+    }
+
+    .gallery-container {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .modal img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="row g-3">
+                                <div class="col-6 col-md-4 col-lg-3">
+                        <div class="gallery-item" onclick="openModal('uploads/image1.webp')">
+                            <img src="uploads/image1.webp" alt="Gallery Image" class="img-fluid">
+                        </div>
+                    </div>
+                                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="gallery-item" onclick="openModal('uploads/image2.webp')">
+                            <img src="uploads/image2.webp" alt="Gallery Image" class="img-fluid">
+                        </div>
+                    </div>
+                                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="gallery-item" onclick="openModal('uploads/image3.webp')">
+                            <img src="uploads/image3.webp" alt="Gallery Image" class="img-fluid">
+                        </div>
+                    </div>
+                                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="gallery-item" onclick="openModal('uploads/image4.webp')">
+                            <img src="uploads/image4.webp" alt="Gallery Image" class="img-fluid">
+                        </div>
+                    </div>
+                                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="gallery-item" onclick="openModal('uploads/WhatsApp%20Image%202024-11-14%20at%2010.36.28%20AM.jpg')">
+                            <img src="uploads/WhatsApp%20Image%202024-11-14%20at%2010.36.28%20AM.jpg" alt="Gallery Image" class="img-fluid">
+                        </div>
+                    </div>
+                            </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="#" alt="Modal Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+    function openModal(imageSrc) {
+        document.getElementById('modalImage').src = imageSrc;
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+    }
+    </script>
+</body>
+
+
+<!-- Mirrored from bettingrajagroup.site/imagegallery.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jan 2025 14:51:16 GMT -->
+</html>

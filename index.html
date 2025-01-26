@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batting Raja</title>
+    <link href="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Fullscreen Background */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('back.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main Container */
+        .main-container {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Header */
+        .header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffdd40;
+            margin-bottom: 1rem;
+        }
+
+        /* Logo Circle */
+        .logo-circle {
+            width: 120px;
+            height: 120px;
+            background-color: #ffdd40;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(255, 221, 64, 0.6);
+            overflow: hidden;
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Social Media Buttons */
+        .social-btns a {
+            color: white;
+            font-size: 1.1rem;
+            margin: 0.5rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+            width: 100px;
+        }
+
+        .social-btns a.telegram { background-color: #0088cc; }
+        .social-btns a.instagram { background-color: #d62976; }
+        .social-btns a.whatsapp { background-color: #25D366; }
+
+        /* Countdown Timer */
+        .timer {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border: 6px solid #ffdd40;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            font-size: 1.5rem;
+            color: #ffdd40;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(255, 221, 64, 0.6);
+        }
+
+        .timer:before {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            width: 117%;
+            height: 114%;
+            border: 6px solid rgba(255, 221, 64, 0.4);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.2); opacity: 0; }
+        }
+
+        /* Images */
+        .small-image {
+            width: 35px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* "See More" Button */
+        .see-more {
+            background-color: #ffdd40;
+            color: black;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .see-more:hover { background-color: #ffd700; }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .header { font-size: 2rem; }
+            .logo-circle, .timer { width: 90px; height: 90px; }
+            .social-btns a { font-size: 1rem; width: 95px; padding: 8px 10px; }
+            .small-image { width: 30px; }
+        }
+        @keyframes fadeInOut {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <div class="header" style="font-family:verdana;">BATTING RAJA</div>
+
+        <!-- Logo Circle -->
+        <div class="logo-circle"><img src="logo.jpg" alt="Logo"></div>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="timer">10</div>
+
+        <!-- Social Media Buttons -->
+        <div class="social-btns">
+            <a href="https://t.me/+oAaCLwmO3M42NGE1" target="_blank" class="telegram" style="
+                        display: inline-block; 
+                        padding: 20px 6px; 
+                        font-size: 20px; 
+                        font-weight: bold; 
+                        color: white; 
+                        background-color: #0088cc; 
+                        text-decoration: none; 
+                        border-radius: 40px; 
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                        transition: opacity 1.5s ease-in-out; 
+                        animation: fadeInOut 3s infinite; 
+                        width: 200px; /* Set a fixed width */
+                        text-align: center; /* Ensure text is centered */
+                    ">
+                Telegram
+            </a><br />
+            </div><br />
+
+        <!-- Description -->
+        <div class="main-contriner">
+            🔍 Cricket Analysis | 💰Trading insights | ✈️Lifestyle<br>
+            💥World best : 95% Accuracy🀀𐎯🁢r>
+            📊Founder of the cricket trading💸
+            Check recently profit👇
+        </div><br />
+
+        <!-- Image Thumbnails -->
+        <div>
+            <img src="bettingrajagroup.site/image1.webp" alt="Image 1" class="small-image" onclick="openModal('bettingrajagroup.site/image1.webp')">
+            <img src="bettingrajagroup.site/image2.webp" alt="Image 2" class="small-image" onclick="openModal('bettingrajagroup.site/image2.webp')">
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="#" alt="Modal Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More Button -->
+       <a href="bettingrajagroup.site/imagegallery.html"><button class="see-more" >See More</button>
+       </a> 
+    </div>
+
+    <!-- JavaScript for countdown and modal -->
+    <script>
+        // Countdown Timer Script
+        let time = 10;
+        const countdownElement = document.getElementById('countdown');
+
+        const updateCountdown = () => {
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
+            countdownElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+            if (time > 0) {
+                time--;
+            } else {
+               
+              time=10;
+             
+            }
+        };
+
+        const timer = setInterval(updateCountdown, 1000);
+    </script>
+
+    <script src="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
+        }
+    </script>
+</body>
+</html>
